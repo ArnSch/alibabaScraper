@@ -1,0 +1,8 @@
+extends layout
+block content
+  h1 No Results Found !
+
+  .navbar.noresults.clearfix
+    form(action='/',method='post')
+      input.searchbar(name='search', type='text')
+      button.searchbutton(type='submit') Search

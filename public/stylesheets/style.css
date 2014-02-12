@@ -1,0 +1,133 @@
+body {
+	background-color:rgb(255, 255, 255);
+	font:300 1.188em/1.38 Lato;
+	padding-top: 100px;
+}
+
+button {
+	display:block;
+	float:left;
+	height:40px;
+	margin-top:19px;
+	border-radius:2px;
+	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.2);
+	font-size:1em;
+	line-height:1.38;
+	text-align:center;
+	color:rgb(255, 255, 255);
+}
+
+#download{
+	display:block;
+	float:left;
+	height:40px;
+	margin-top:19px;
+	border-radius:2px;
+	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.2);
+	font-size:1em;
+	line-height:1.38;
+	text-align:center;
+	color:rgb(255, 255, 255);
+	line-height: 2em;
+}
+
+
+input {
+	display:block;
+	float:left;
+	width:46%;
+	height:40px;
+	margin:19px 0 0 10%;
+	padding:7px 10px 9px;
+	border-radius:2px;
+	background-color:rgb(242, 242, 242);
+}
+.homeDiv{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	width:100%;
+	margin:auto;
+	padding-bottom:20px;
+	padding-left: 10%;
+	height:7000px;
+	background-color:rgb(227, 95, 0);
+}
+
+.noresults {
+	padding-left: 10%;
+}
+
+
+.navbar {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	width:100%;
+	margin:auto;
+	padding-bottom:20px;
+	background-color:rgb(227, 95, 0);
+}
+.downloadbutton {
+	width:12%;
+	margin-left:1.75%;
+	background-color:rgb(43, 179, 21);
+}
+.downloadbutton:hover{
+	background-color: rgb(91, 179, 76);
+}
+.downloadbutton:active{
+	background-color:rgb(43, 179, 21);
+}
+
+.searchbutton {
+	width:18.8333333333%;
+	margin-left:1.5%;
+	border:2px solid rgb(255, 255, 255);
+	background-color:rgba(0, 163, 255, 0.01);
+	letter-spacing:1px;
+	transition: background-color .5s;
+	-webkit-transition: background-color .5s
+}
+.searchbutton:hover {
+	background-color:rgb(255, 255, 255);
+	color: rgb(227, 95, 0);
+	transition: background-color .8s;
+	-webkit-transition: background-color .8s;
+}
+.searchbutton:active {
+	border:2px solid rgb(149, 79, 22);
+	transition: border .1s;
+	-webkit-transition: border .1s
+}
+.tableData{
+	text-align: center;
+	width:100%;
+
+}
+.name, .industry, .website, .contact, .phone, .city{
+	display: inline-block;
+	width: 16%;
+	font-size: 12px;
+	padding: 7px;
+
+}
+
+.name, .industry {
+	width:22%;
+}
+.contact, .website, .city {
+	width:10%;
+}
+.header li {
+	border-bottom: 2px solid black;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+hr {
+	width: 90%;
+}

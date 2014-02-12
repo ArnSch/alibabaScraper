@@ -1,0 +1,41 @@
+extends layout
+block content
+  script.
+    var socket = io.connect('http://localhost');
+
+    var dataToDownload = !{JSON.stringify(csv)};
+    console.log(dataToDownload);
+  .navbar.clearfix
+    form(action='/',method='post')
+      input.searchbar(name='search', type='text', value='#{searchTerms}')
+      button.searchbutton(type='submit', onclick='$(".loader2").css("visibility", "visible")') Search
+    a#download.downloadbutton() Download CSV
+    .loader2(style='visibility:hidden;')
+
+
+  div 
+    .tableData
+      ul.header
+        li.name Name
+        li.industry Top Products
+        li.contact Contact
+        li.phone Phone
+        li.city City
+        li.website Website
+      -for array in csvData
+        ul.data
+          li.name= array.Name
+          li.industry= array.Industry
+          li.contact= array.ContactPerson
+          li.phone= array.PhoneNumbers
+          li.city= array.City
+          li.website
+            a(href='#{array.Website}') Website
+
+        hr
+  script.
+    var pom = document.getElementById('download');
+    pom.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(dataToDownload));
+    pom.setAttribute('download', '#{searchTerms}.csv');            
+
+

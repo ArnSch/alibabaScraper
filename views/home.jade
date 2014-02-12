@@ -1,0 +1,8 @@
+extends layout
+block content
+  .homeDiv.clearfix
+    form(action='/',method='post',style='top:200px; position:relative;')
+      input.searchbar(name='search', type='text')
+      button.searchbutton(type='submit', onclick='$(".loader1").css("visibility", "visible")') Search
+    .instructions
+      .loader1(style='visibility:hidden;')
