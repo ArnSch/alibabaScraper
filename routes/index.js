@@ -50,8 +50,9 @@ exports.index = function(req, res){
 				,  title = $('div.corp h2.title.ellipsis a', this).html()
 				,  contactLink = $('div.company a.cd.dot-company', this).attr('href')
 				,  industry = $('div.right div.attrs div.attr div.value.ellipsis.ph', this).attr('title')
+				,  directContact = $('a.button.csp.dot-company', this).attr('href')
 				,  arr = []
-				,  jsonRow = {'Name': '', 'Industry':'', 'Website':'', 'ContactPerson': '', 'PhoneNumbers':'', 'City':''};
+				,  jsonRow = {'Name': '', 'Industry':'', 'Website':'', 'ContactPerson': '', 'PhoneNumbers':'', 'City':'', 'ContactDirect':''};
 
 				arr.push(title);
 				arr.push(industry);
@@ -61,6 +62,8 @@ exports.index = function(req, res){
 				jsonRow['Name'] = title.replace('<font>', '').replace('<b>', '').replace('</font>','').replace('</b>', '');
 				jsonRow['Industry'] = industry.replace('<font>', '').replace('<b>', '').replace('</font>','').replace('</b>', '');
 				jsonRow['Website'] = url;
+				jsonRow['ContactDirect'] = directContact;
+
 
 				json.push(jsonRow);
 

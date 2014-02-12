@@ -22,6 +22,7 @@ block content
         li.phone Phone
         li.city City
         li.website Website
+        li.contactDirect Contact
       -for array in csvData
         ul.data
           li.name= array.Name
@@ -31,6 +32,8 @@ block content
           li.city= array.City
           li.website
             a(href='#{array.Website}') Website
+          li.contactDirect
+            a(href='#{array.ContactDirect}',target="_blank") Contact Supplier
 
         hr
   script.

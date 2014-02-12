@@ -107,7 +107,7 @@ input {
 	width:100%;
 
 }
-.name, .industry, .website, .contact, .phone, .city{
+.name, .industry, .website, .contact, .phone, .city, .contactDirect{
 	display: inline-block;
 	width: 16%;
 	font-size: 12px;
@@ -116,9 +116,9 @@ input {
 }
 
 .name, .industry {
-	width:22%;
+	width:20%;
 }
-.contact, .website, .city {
+.contact, .website, .city, .contactDirect {
 	width:10%;
 }
 .header li {
@@ -129,5 +129,20 @@ input {
 	margin-bottom: 5px;
 }
 hr {
-	width: 90%;
+	width: 95%;
+}
+.contactDirect a{
+	display:block;
+	float:left;
+	height:25px;
+	width: 100%;
+	margin-top:19px;
+	padding: 3px;
+	border-radius:2px;
+	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.2);
+	font-size:1em;
+	text-align:center;
+	color:white;
+	line-height: 1.5em;
+	background-color:rgb(227, 95, 0);
 }
